@@ -1,6 +1,7 @@
 // NOTE: PLEASE READ EACH INSTRUCTION COMMENT CAREFULLY TO HELP YOU PROCESS THIS PROJECT
 // IF YOU ARE STUCK ASK AN INSTRUCTOR FOR HELP, ALWAYS WRITE THE CODE BELOW THE ASSIGNMENTS.
 
+<<<<<<< Updated upstream
 productArray = [];
 let form = document.getElementById("form");
 
@@ -24,6 +25,18 @@ function addProduct() {
 
     //clear field
     output.value = "";
+=======
+function addProduct() {
+  // Assignment 1
+  // You need to change the id that this collects to product.
+  let input = document.getElementById("input").value;
+  //let newProduct = { input };
+  //return false;
+
+  if (input.value == "") {
+    console.log("invalid input");
+  } else {
+>>>>>>> Stashed changes
   }
 }
 
@@ -58,6 +71,7 @@ let newProduct = { input };
 // Please look up how to use push on an array here: https://www.w3schools.com/jsref/jsref_push.asp
 // use console.log and pass in the product array to check if you have it setup correctly.
 // console.log(productArray)
+<<<<<<< Updated upstream
 
 // Assignment 3:
 // Hint: Use a loop(look up the javascript loop on w3schools.) on your product array and set the max length of the loop to the array using
@@ -104,3 +118,5 @@ function onSubmit(e) {
   }
 }
 */
+=======
+>>>>>>> Stashed changes
