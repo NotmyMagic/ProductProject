@@ -32,14 +32,15 @@
     </div>
     <div class="container2">
       <div>
-        <form onsubmit="return false">
+        <form id="form" onsubmit="return false">
           <label for="product">Product Name</label>
           <input type="text" id="product" autocomplete="off" />
           <input type="submit" onclick="addProduct()" />
         </form>
+        <ul id="productList"></ul>
       </div>
-      <div id="output"></div>
+      <div class="output"></div>
     </div>
-    <script src="./script.js"></script>
+    <script src="./test.js"></script>
   </body>
 </html>

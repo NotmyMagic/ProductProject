@@ -2,10 +2,47 @@
 // IF YOU ARE STUCK ASK AN INSTRUCTOR FOR HELP, ALWAYS WRITE THE CODE BELOW THE ASSIGNMENTS.
 
 productArray = [];
+let form = document.getElementById("form");
+
+const product = document.querySelector("#product");
+const output = document.querySelector("#output");
+
+function addProduct() {
+  console.log("hello");
+
+  if (product.value === "") {
+    output.classList.add("");
+    output.innerHTML = "Please enter a valid Product";
+    console.log = "Form invalid";
+
+    setTimeout(() => output.remove(), 3000);
+  } else {
+    const li = document.createElement("li");
+    li.appendChild(document.createTextNode(`${output.value}`));
+
+    productList.appendChild(li);
+
+    //clear field
+    output.value = "";
 function addProduct() {
   // Assignment 1
   // You need to change the id that this collects to product.
   let input = document.getElementById("input").value;
+  //let newProduct = { input };
+  //return false;
+
+  if (input.value == "") {
+    console.log("invalid input");
+  } else {
+  }
+}
+
+let input = document.getElementById("#product").value;
+const div = document.createElement("div");
+document.getElementById("");
+
+// Assignment 1
+// You need to change the id that this collects to product.
   let newProduct = { input };
   return false;
 }
@@ -29,7 +66,7 @@ function addProduct() {
 // You need to put the value of the input into an array to call later.
 // That means you will need to assign your input using brackets around it
 // to a newProduct variable, remember that assign can mean the equals sign(=).
-
+let newProduct = { input };
 // Hint: You could push your product to a new array once you create a new variable
 // that makes a single object {} with the product variable you made above.
 // Please look up how to use push on an array here: https://www.w3schools.com/jsref/jsref_push.asp
@@ -53,3 +90,31 @@ function addProduct() {
 // output.appendChild(yourdivnamehere)
 
 // this line is to prevent the webpage from reloading. DO NOT MODIFY IT.
+
+// function addProduct(e) {
+//   e.preventDefault();
+//   console.log("submitted");
+//   return false;
+// }
+
+/*
+function onSubmit(e) {
+  console.log("submit");
+  e.preventDefault();
+
+  if (product.value === "") {
+    //output.classList.add("");
+    output.innerHTML = "Please enter a valid Product";
+
+    setTimeout(() => output.remove(), 3000);
+  } else {
+    const li = document.createElement("li");
+    li.appendChild(document.createTextNode(`${output.value}`));
+
+    productList.appendChild(li);
+
+    //clear field
+    output.value = "";
+  }
+}
+*/
